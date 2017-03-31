@@ -6,8 +6,6 @@
 
 .dierhang{width: 1710px;height: 660px;background-color: blue;margin: 0px auto;}
 
-
-
 .disanhang{width: 1710px;height: 240px;background-color: aqua;margin: 0px auto;background:url(zq_images/footer.jpg);}
 .disanhang a{ display: block;margin: 0px auto; width: 220px;height: 40px;font-size: 30px;}
 .disanhang a{text-decoration: none;color: white;font-family: 黑体;margin-bottom: 10px;}
@@ -63,10 +61,9 @@
 
 .video1 video{height: 520px;float: left;border: 2px;}
 .jinqiu{position: absolute; margin:565px;}
-.qiuyuan{width: 500px;height: 540px;float: left;margin-left: 10px;}
-.qiuyuan img{height: 480px; float: right;}
-.haha{width: 5px;position: absolute;font-size: 90px;}
-.pane1_body{border:10px;}
+
+.pane1{position: relative;margin: -30px;}
+.pane1_body{border:10px;position: absolute;top: 0px;margin-top: 0px;}
 
 
 
@@ -82,13 +79,17 @@
 
 .back_photo{width: 1000px; margin: 20px auto;}
 
+
+
 .back_photo ul li.aa{width: 105px;height: 10px;margin: 165px auto;text-align: center;display: inline-block;}
-.back_photo ul li.aa a{width: 240px; height: 25px; font-size: 25px; background: aqua; border-radius: 20px;}
+.back_photo ul li.aa a{width: 240px; height: 25px; font-size: 25px; color: black; border-radius: 20px;background-color: white; text-decoration: none;font-family: 黑体;}
 
 .back_photo ul li.bb{width: 105px;height: 10px;margin: 165px auto;text-align: center;display: inline-block;position: relative;float: right; margin-left: 27px;}
-.back_photo ul li.bb a{ width: 240px; height: 25px; font-size: 25px; background: silver; border-radius: 20px;}
+.back_photo ul li.bb a{ width: 240px; height: 25px; font-size: 25px;color: white;  border-radius: 20px;text-decoration: none;font-family: 黑体;background-color: white;color: black;}
+
 /*鼠标变色*/
-.back_photo a:hover{background-color: black;color: black;font-size: 18px;}
+
+.back_photo  a:hover{background-color: red;color:white; font-size: 18px;font-family: 黑体;text-decoration: none;}
 
 
 

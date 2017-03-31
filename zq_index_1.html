@@ -2,13 +2,30 @@
 <html>
 <head>
 <meta charset="utf-8">
+       <script type="text/javascript">
+
+    function getRTime(){
+        var EndTime= new Date('2017/4/15 12:00:00'); //截止时间
+        var NowTime = new Date();
+        var t =EndTime.getTime() - NowTime.getTime(); 
+        var d=Math.floor(t/1000/60/60/24);
+        var h=Math.floor(t/1000/60/60%24);
+        var m=Math.floor(t/1000/60%60);
+        var s=Math.floor(t/1000%60);
+  
+        document.getElementById("t_d").innerHTML = d + "天";
+        document.getElementById("t_h").innerHTML = h + "时";
+        document.getElementById("t_m").innerHTML = m + "分";
+        document.getElementById("t_s").innerHTML = s + "秒";
+    }
+    setInterval(getRTime,1000);
+</script>
 <link rel="stylesheet" type="text/css" href="index.css">
     <title>计算机足球队官网主页</title>
 </head>
 <body class="body1">
     <div class="diyihang1">
         <div class="back_photo">
-
             <ul >
                 <li class="aa"><a href="index.html">首页</a></li>
                 <li class="aa"><a href="">阵型</a></li>
@@ -23,25 +40,41 @@
 
     <div class="dierhang1">
         <div class="saishiyugao">
-            赛事预告
+                <span id="t_d">00天</span>
+                <span id="t_h">00时</span>
+                <span id="t_m">00分</span>
+                <span id="t_s">00秒</span>
         </div>
+
+
+
+
         <div class="video1">
-            <video autoplay="autoplay" controls="controls" loop="loop"><source src="1.mp4"></video>
+            <video  controls="controls" loop="loop"><source src="1.mp4"></video>
             <div class="jinqiu">
                 2016届院系杯最佳进球视频：《逆转进球》
             </div>
         </div>
-        <div class="qiuyuan">
-            <div class="haha">
-                最佳球员
-            </div>
-            <img src="zq_images/yano.jpg">
+        <div  class="panel">     
+            <ul class="panel_body">        
+                <iframe style="width:400px; height:520px;margin:0px auto;margin-left: 30px;" frameborder="0" scrolling="yes" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=6013335462">
+                </iframe>    
+            </ul>
         </div>
+
     </div>
+
 
     <div class="disanhang1">
         
     </div>
         
+    <div class="disihang1">
+        <a href="www.hellozhaojun.cn">Design by zhaojun</a>
+    </div>
+
+
+
+
 </body>
 </html>

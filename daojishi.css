@@ -1,0 +1,12 @@
+
+
+.saishiyugao{width: 900px;height: 990px;background: url(zq_images/daojishi.png); position: relative;}
+#t_d{position: relative; margin: 780px auto ;font-size: 70px;left: 100px;position: absolute;color: gold;}
+#t_h{position: absolute; margin: 780px auto ;font-size: 70px;left: 280px;position: absolute;color: gold;}
+#t_m{position: absolute; margin: 780px auto ;font-size: 70px;left: 460px;position: absolute;color: gold;}
+#t_s{position: absolute; margin: 780px auto ;font-size: 70px;left: 660px;position: absolute;color: gold;}
+
+
+@media screen and (max-width: 1680px) {  
+    .daojishi{width: 100%;}
+}

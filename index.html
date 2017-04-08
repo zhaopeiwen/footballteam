@@ -5,6 +5,22 @@
 <link rel="shortcut icon" href="zq_images/tubiao.ico"/>
 <link rel="stylesheet" type="text/css" href="index.css">
     <title>哈商大计算机足球队官网</title>
+<script>
+    window.onload = function(){     
+        var images = document.getElementsByTagName('img');
+        var pos = 2;
+        var len = images.length;         
+        setInterval(function(){
+            if (pos==3) {
+                return false;
+            }         
+            images[pos].style.display = 'none';
+            pos = ++pos == len ? 2 : pos;
+            images[pos].style.display = 'inline';
+
+        },4000);
+    }
+</script>
 </head>
 <body>
     <div class="diyihang">
@@ -16,8 +32,9 @@
         </div>
     </div>
 
-    <div class="dierhang">
-        <img src="zq_images/bg.jpg">
+    <div class="dierhang" id="tab">
+        <img src="zq_images/bg.jpg" id="tab1">
+        <img src="zq_images/bg1.png" id="tab1">
     </div>
 
 

@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 .body{width: 1710px;height: 2500px;background-color: silver;margin: 0px auto;}
 
-.diyihang{width: 1710px;height: 130px;background-color: #c0c0c0;margin: 0px auto;}
+.diyihang{width: 1710px;height: 130px;background-color: silver;margin: 0px auto;}
 .logo{width: 500px;height: 130px;float: left;background-color: green;}
 .guanjun{width: 1000px;height: 130px;float: right;background-color: yellow;}
 
@@ -190,8 +190,8 @@
 
 .back_photo  a:hover{background-color: red;color:white; font-size: 18px;font-family: 黑体;text-decoration: none;}
 
-
-
+/*图片自动轮播*/
+#tab { overflow:hidden;  position:relative;}
 
 
 >>>>>>> 7bb628136bc35446741f05cd48095c4514d98cbb

@@ -24,8 +24,8 @@
 <div id="biaodan">
     <form name="form1" method="post" onsubmit="return getRTime()">
         <table style="position: relative;margin-top: 0px;">
-            <tr><th style="font-size: 30px;">你的名字是？</th></tr>
-            <tr><th ><input type="text" name="name" id="name" value="" style="width: 90%;height: 150%;"></th></tr>
+            <tr><th style="font-size: 30px;">投名状：</th></tr>
+            <tr><th ><input type="text" name="name" id="name" value="" style="width: 250px;height: 30px;" placeholder="输入你的名字,然后直接分享票圈即可"></th></tr>
 <!--             <tr><th>你支持哪个院足球队？</th></tr>
             <tr><th><select id="team">
                         <option value="1">计算机</option>
@@ -65,7 +65,7 @@
         var name = document.getElementById("name").value;
         document.getElementById("biaodan").display = "none";
         // document.getElementById("daojishi_div").style.display = "block";
-        document.title="我"+name+"为计院足球队加油！距比赛"+d+"天"+h+"时"+m+"分";
+        document.title="我"+name+"为计院足球队加油！距比赛开始还有"+d+"天"+h+"时"+m+"分";
     }
     setInterval(getRTime,1000);
 </script>

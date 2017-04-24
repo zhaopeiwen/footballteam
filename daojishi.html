@@ -6,6 +6,11 @@
 <link rel="shortcut icon" href="zq_images/tubiao.ico"/>
 
 <script type="text/javascript">
+    function getName(){
+        var name;
+        alert("你的名字是？");
+    }
+
     function getRTime(){
         var EndTime= new Date('2017/4/26 15:00:00'); //截止时间
         var NowTime = new Date();
@@ -19,7 +24,7 @@
         document.getElementById("t_m").innerHTML = m + "分";
         document.getElementById("t_s").innerHTML = s + "秒";
         var name = "haha";
-        document.title=name+"为计算机足球队加油！距拿一血还有"+d+"天"+h+"时"+m+"分"+s+"秒";
+        document.title=name+"为计院足球队加油！距比赛"+d+"天"+h+"时"+m+"分";
     }
     setInterval(getRTime,1000);
     
@@ -33,9 +38,6 @@
 <img src="zq_images/tubiao.jpg" width="0" height="0" />
 <center>
 <div class="daojishi_div">
-    <div>
-        
-    </div>
     <div class="saishiyugao" onclick="location.href='http://hellozhaojun.cn/footballteam';">
             <span id="t_d">00天</span>
             <span id="t_h">00时</span>

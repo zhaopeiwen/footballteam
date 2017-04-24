@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>管理足球队</title>
+<link rel="shortcut icon" href="zq_images/tubiao.ico"/>
+<style type="text/css">
+    .saishiyugao{width: 900px;height: 1290px;background: url(zq_images/guanli.png); position: relative;}
+    #t_d{position: relative; margin: 780px auto ;font-size: 70px;left: 100px;position: absolute;color: gold;}
+    #t_h{position: absolute; margin: 780px auto ;font-size: 70px;left: 280px;position: absolute;color: gold;}
+    #t_m{position: absolute; margin: 780px auto ;font-size: 70px;left: 460px;position: absolute;color: gold;}
+    #t_s{position: absolute; margin: 780px auto ;font-size: 70px;left: 660px;position: absolute;color: gold;}
+
+
+    @media screen and (max-width: 1680px) {  
+        .daojishi{width: 100%;}
+    }
+
+    .saishiyugao a{font-size: 40px;position: relative;text-decoration: none;top: 1035px;font-family: 黑体;color: black;display: block;}
+    .saishiyugao a:hover{font-size: 40px;text-decoration: none;color: red;}    
+</style>
+</head>
+<body>
+<img src="http://hellozhaojun.cn/footballteam/zq_images/tubiao.jpg" style="width:0; height:0; position:absolute;" />
+
+<center>
+<div class="daojishi_div"  id="daojishi_div">
+    <div class="saishiyugao" onclick="location.href='http://hellozhaojun.cn/footballteam';">
+            <span id="t_d">00天</span>
+            <span id="t_h">00时</span>
+            <span id="t_m">00分</span>
+            <span id="t_s">00秒</span>
+    </div>
+</div>
+<div id="biaodan">
+    <form name="form1" method="post" onsubmit="return getRTime()">
+        <table style="position: relative;margin-top: -100px;">
+            <tr><th style="font-size: 50px;">投名状：</th></tr>
+            <tr><th ><input type="text" name="name" id="name" value="" style="width: 700px;height: 50px;font-size: 30px;" placeholder="输入你的名字,然后直接分享票圈即可为你的主队加油"></th></tr>
+<!--             <tr><th>你支持哪个院足球队？</th></tr>
+            <tr><th><select id="team">
+                        <option value="1">计算机</option>
+                        <option value="2" selected>会计</option>
+                        <option value="3">管理</option>
+                        <option value="4">金融</option>
+                        <option value="5">土冷</option>
+                        <option value="6">法学</option>
+                        <option value="7">经济</option>
+                        <option value="8">北联</option>
+                    </select></th></tr> -->
+<!--             <tr><th><input type="submit" value="确定"></th></tr> -->
+        </table>
+
+    </form>
+
+</div>
+    <p style="position: absolute;right: 0px;">
+        <a href="team_choice.html" style="text-decoration: none;position: relative; ">返回球队选择</a>
+    </p>
+</center>
+
+</body>
+<script type="text/javascript">
+    // function check(){
+    //     var team = document.getElementById("team");
+    // }
+
+    function getRTime(){
+        var EndTime= new Date('2017/4/26 15:00:00'); //截止时间
+        var NowTime = new Date();
+        var t =EndTime.getTime() - NowTime.getTime(); 
+        var d=Math.floor(t/1000/60/60/24);
+        var h=Math.floor(t/1000/60/60%24);
+        var m=Math.floor(t/1000/60%60);
+        var s=Math.floor(t/1000%60);
+        document.getElementById("t_d").innerHTML = d + "天";
+        document.getElementById("t_h").innerHTML = h + "时";
+        document.getElementById("t_m").innerHTML = m + "分";
+        document.getElementById("t_s").innerHTML = s + "秒";
+        // var team = document.getElementById("team");
+        var name = document.getElementById("name").value;
+        document.getElementById("biaodan").display = "none";
+        // document.getElementById("daojishi_div").style.display = "block";
+        document.title="我"+name+"为管院足球队加油！距比赛开始还有"+d+"天"+h+"时"+m+"分";
+    }
+    setInterval(getRTime,1000);
+</script>
+
+</html>

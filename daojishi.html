@@ -5,7 +5,50 @@
 <title>计算机VS金融</title>
 <link rel="shortcut icon" href="zq_images/tubiao.ico"/>
 
+
+<link rel="stylesheet" type="text/css" href="daojishi.css">
+</head>
+<body>
+<img src="http://hellozhaojun.cn/footballteam/zq_images/tubiao.jpg" style="width:0; height:0; position:absolute;" />
+
+<center>
+<div class="daojishi_div"  id="daojishi_div">
+    <div class="saishiyugao" onclick="location.href='http://hellozhaojun.cn/footballteam';">
+            <span id="t_d">00天</span>
+            <span id="t_h">00时</span>
+            <span id="t_m">00分</span>
+            <span id="t_s">00秒</span>
+            <a href="http://hellozhaojun.cn/footballteam" alt='haha'>点击进入计算机足球队官网</a>
+    </div>
+</div>
+<div id="biaodan">
+    <form name="form1" method="post" onsubmit="return getRTime()">
+        <table style="position: relative;margin-top: 0px;">
+            <tr><th style="font-size: 30px;">你的名字是？</th></tr>
+            <tr><th ><input type="text" name="name" id="name" value="" style="width: 90%;height: 150%;"></th></tr>
+<!--             <tr><th>你支持哪个院足球队？</th></tr>
+            <tr><th><select id="team">
+                        <option value="1">计算机</option>
+                        <option value="2" selected>会计</option>
+                        <option value="3">管理</option>
+                        <option value="4">金融</option>
+                        <option value="5">土冷</option>
+                        <option value="6">法学</option>
+                        <option value="7">经济</option>
+                        <option value="8">北联</option>
+                    </select></th></tr> -->
+<!--             <tr><th><input type="submit" value="确定"></th></tr> -->
+        </table>
+    </form>
+
+</div>
+</center>
+</body>
 <script type="text/javascript">
+    // function check(){
+    //     var team = document.getElementById("team");
+    // }
+
     function getRTime(){
         var EndTime= new Date('2017/4/26 15:00:00'); //截止时间
         var NowTime = new Date();
@@ -18,31 +61,13 @@
         document.getElementById("t_h").innerHTML = h + "时";
         document.getElementById("t_m").innerHTML = m + "分";
         document.getElementById("t_s").innerHTML = s + "秒";
-        var name = "haha";
-        document.title=name+"为计院足球队加油！距比赛"+d+"天"+h+"时"+m+"分";
+        // var team = document.getElementById("team");
+        var name = document.getElementById("name").value;
+        document.getElementById("biaodan").display = "none";
+        // document.getElementById("daojishi_div").style.display = "block";
+        document.title="我"+name+"为计院足球队加油！距比赛"+d+"天"+h+"时"+m+"分";
     }
     setInterval(getRTime,1000);
-    
 </script>
-<link rel="stylesheet" type="text/css" href="daojishi.css">
-
-
-</head>
-
-<body>
-<img src="http://hellozhaojun.cn/footballteam/zq_images/tubiao.jpg" style="width:0; height:0; position:absolute;" />
-<center>
-<div class="daojishi_div">
-    <div class="saishiyugao" onclick="location.href='http://hellozhaojun.cn/footballteam';">
-            <span id="t_d">00天</span>
-            <span id="t_h">00时</span>
-            <span id="t_m">00分</span>
-            <span id="t_s">00秒</span>
-            <a href="http://hellozhaojun.cn/footballteam" alt='haha'>点击进入计算机足球队官网</a>
-    </div>
-</div>
-</center>
-</body>
-
 
 </html>

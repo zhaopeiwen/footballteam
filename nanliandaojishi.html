@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>土冷足球队</title>
+<title>南联足球队</title>
 <link rel="shortcut icon" href="zq_images/tubiao.ico"/>
 <script>
 var _hmt = _hmt || [];
@@ -15,7 +15,7 @@ var _hmt = _hmt || [];
 </script>
 
 <style type="text/css">
-    .saishiyugao{width: 900px;height: 1290px;background: url(zq_images1/daojishi1.png); position: relative;}
+    .saishiyugao{width: 900px;height: 1290px;background: url(zq_images1/daojishi3.png); position: relative;}
     #t_d{position: relative; margin: 780px auto ;font-size: 70px;left: 100px;position: absolute;color: gold;}
     #t_h{position: absolute; margin: 780px auto ;font-size: 70px;left: 280px;position: absolute;color: gold;}
     #t_m{position: absolute; margin: 780px auto ;font-size: 70px;left: 460px;position: absolute;color: gold;}
@@ -76,7 +76,7 @@ var _hmt = _hmt || [];
     // }
 
     function getRTime(){
-        var EndTime= new Date('2017/4/26 12:00:00'); //截止时间
+        var EndTime= new Date('2017/4/27 12:00:00'); //截止时间
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime(); 
         var d=Math.floor(t/1000/60/60/24);
@@ -91,7 +91,7 @@ var _hmt = _hmt || [];
         var name = document.getElementById("name").value;
         document.getElementById("biaodan").display = "none";
         // document.getElementById("daojishi_div").style.display = "block";
-        document.title="我"+name+"为土冷足球队加油！距比赛开始还有"+d+"天"+h+"时"+m+"分";
+        document.title="我"+name+"为南联足球队加油！距比赛开始还有"+d+"天"+h+"时"+m+"分";
     }
     setInterval(getRTime,1000);
 </script>
